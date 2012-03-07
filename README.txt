@@ -47,7 +47,7 @@ point.  The problem is: this isn't Pong as you know it.  Enough said.
 paddle, OR (1 point + 1 bonus point) make the opponent paddle play on
 its own. But don't make the opponent impossibly hard!
 
-* (1 point) Push your work to your GitHub account.
+* (1 point) Add, Commit, Push your work to your GitHub account.
 
 #Submission#
 Push your work to your GitHub account and **send me a message (to
