@@ -117,7 +117,7 @@ while True:
 	# Clear screen
 	screen.fill((96, 47, 107))
 	
-	#Dashed center line
+	#Draw Dashed center line
 	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 0, 10, SCREEN_HEIGHT / 15))
 	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 2 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
 	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 4 *SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
