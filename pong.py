@@ -10,6 +10,7 @@ PADDLE_HEIGHT = 100
 BALL_SPEED = 10
 BALL_WIDTH_HEIGHT = 16
 
+
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Pong")
@@ -118,14 +119,8 @@ while True:
 	screen.fill((96, 47, 107))
 	
 	#Draw Dashed center line
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 0, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 2 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 4 *SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 6 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 8 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 10 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 12 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
-	pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 14 * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
+	for i in range(0, 8, 1):
+		pygame.draw.rect(screen, (218, 165, 32), (SCREEN_WIDTH / 2 - 5, 2 * i * SCREEN_HEIGHT / 15, 10, SCREEN_HEIGHT / 15))
 	
 	#scores
 	score_text1 = font.render(str(score1), True, (218, 165, 32))
